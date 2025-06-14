@@ -29,7 +29,7 @@ const planets: Planet[] = [
     rotationSpeed: 0.004,
     orbitSpeed: 0.04,
     description: 'The smallest and innermost planet in our solar system',
-    texture: 'textures/mercury.jpg'
+    texture: 'public/textures/mercury.jpg'
   },
   {
     name: 'Venus',
@@ -39,7 +39,7 @@ const planets: Planet[] = [
     rotationSpeed: 0.002,
     orbitSpeed: 0.015,
     description: 'The hottest planet with a thick, toxic atmosphere',
-    texture: 'textures/venus.jpg'
+    texture: 'public/textures/venus.jpg'
   },
   {
     name: 'Earth',
@@ -49,7 +49,7 @@ const planets: Planet[] = [
     rotationSpeed: 0.01,
     orbitSpeed: 0.01,
     description: 'Our beautiful blue home planet, the only known world with life',
-    texture: 'textures/earth.jpg'
+    texture: 'public/textures/earth.jpg'
   },
   {
     name: 'Mars',
@@ -59,7 +59,7 @@ const planets: Planet[] = [
     rotationSpeed: 0.009,
     orbitSpeed: 0.008,
     description: 'The red planet, a cold desert world with the largest volcano in the solar system',
-    texture: 'textures/mars.jpg'
+    texture: 'public/textures/mars.jpg'
   },
   {
     name: 'Jupiter',
@@ -69,7 +69,7 @@ const planets: Planet[] = [
     rotationSpeed: 0.02,
     orbitSpeed: 0.004,
     description: 'The largest planet, a gas giant with over 80 moons including the four Galilean moons',
-    texture: 'textures/jupiter.jpg'
+    texture: 'public/textures/jupiter.jpg'
   },
   {
     name: 'Saturn',
@@ -79,7 +79,7 @@ const planets: Planet[] = [
     rotationSpeed: 0.018,
     orbitSpeed: 0.003,
     description: 'The ringed planet, famous for its spectacular ring system made of ice and rock',
-    texture: 'textures/saturn.jpg',
+    texture: 'public/textures/saturn.jpg',
     ring: {
       innerRadius: 1.8,
       outerRadius: 2.8,
@@ -94,7 +94,7 @@ const planets: Planet[] = [
     rotationSpeed: 0.015,
     orbitSpeed: 0.002,
     description: 'An ice giant that rotates on its side, with faint rings and 27 known moons',
-    texture: 'textures/uranus.jpg',
+    texture: 'public/textures/uranus.jpg',
     ring: {
       innerRadius: 1.5,
       outerRadius: 2.0,
@@ -109,7 +109,7 @@ const planets: Planet[] = [
     rotationSpeed: 0.016,
     orbitSpeed: 0.001,
     description: 'The windiest planet with storms reaching speeds of 2,100 km/h',
-    texture: 'textures/neptune.jpg'
+    texture: 'public/textures/neptune.jpg'
   }
 ];
 
