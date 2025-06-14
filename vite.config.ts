@@ -11,12 +11,33 @@ export default defineConfig(({ mode }) => ({
   },
   plugins: [
     react(),
-    mode === 'development' &&
-    componentTagger(),
+    mode === 'development' && componentTagger(),
   ].filter(Boolean),
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
     },
   },
+  // ========== Vercel-Specific Optimizations ==========
+  base: '/', // Set to '/your-subdir/' if deploying to subdirectory
+  build: {
+    outDir: 'dist',
+    assetsDir: 'assets',
+    rollupOptions: {
+      output: {
+        assetFileNames: 'assets/[name]-[hash][extname]',
+        chunkFileNames: 'assets/[name]-[hash].js',
+        entryFileNames: 'assets/[name]-[hash].js'
+      }
+    }
+  },
+  // ========== 3D Asset Handling ==========
+  assetsInclude: ['**/*.glb', '**/*.gltf', '**/*.jpg', '**/*.png'],
+  optimizeDeps: {
+    exclude: ['three'], // Better Three.js handling
+    include: [
+      '@react-three/fiber',
+      '@react-three/drei',
+    ]
+  }
 }));
